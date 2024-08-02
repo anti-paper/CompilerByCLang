@@ -1,0 +1,9 @@
+services:
+  clang:
+    container_name: clang
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/app
