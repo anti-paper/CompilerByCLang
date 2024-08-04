@@ -13,7 +13,7 @@ int ROW_LENGTH = 1024;
  */
 int main(int argc, char **argv) {
   if (argc != 3) {
-    printf("expected 3 arguments but %d given.\n", argc);
+    fprintf(stderr, "expected 3 arguments but %d given.\n", argc);
   }
 
   char *readFileName = argv[1];
